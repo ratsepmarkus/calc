@@ -11,41 +11,44 @@
     <link rel="stylesheet" href="style.css">
     <title>EELARVE PLAANUR</title>
 </head>
-
 <body>
     <div class="container">
-            <div class="header">
-                <div class="header-text">
-                    <h2>EELARVE</h2>
-                    <h2>PLAANUR</h2>
-                </div>
-                <div class="vl"></div>
-                <h2 class="j22k">JÄÄK: </h2>
-                <p id="vahe" class="balance-container"></p>
+        <div class="header">
+            <div class="header-text">
+                <h2>EELARVE</h2>
+                <h2>PLAANUR</h2>
             </div>
+            <div class="vl"></div>
+            <h2 class="j22k">JÄÄK: </h2>
+            <p id="vahe" class="balance-container"></p>
+        </div>
         <div class="hl"></div>
-            <div class=container3>
-                    <div class=container2>
-                        <main>
-                            <input type="number" id="myText" value="" class="kast">
-                        </main>
-                        <main>
-                            <a href="#" button class="button pluss" id onclick="pluss()"> LISA TULUDESSE </a>
-                            <a href="#" button class="button miinus" id onclick="miinus()"> LISA KULUDESSE </a>
-                        </main>
-                    </div>
+        <div class="container3">
+            <div class="container2">
+                <div class="container4">
                     <main>
-                        <div class="container4" style="display: flex;">
-                            <div class="column1" >
-                                <div class="column2">
-                                    <ul id="tulud_values"></ul>
-                                    <ul id="kulud_values"></ul>
-                                </div>
-                            </div>
-                        </div>
+                        <input type="text" id="kirjeldus" placeholder="Sisesta kirjeldus" class="kast">
+                        <input type="number" id="summa" placeholder="Sisesta summa" class="kast">
                     </main>
+                    <main>
+                        <button class="button pluss"  onclick="pluss()"> LISA TULUDESSE </button>
+                        <button class="button miinus"  onclick="miinus()"> LISA KULUDESSE </button>
+                    </main>
+                </div>
+                <div class="container4">
+                    <div class="flex-container" style="display: flex;">
+                        <div class="column" id="income" >
+                            <h2>Tulud</h2>
+                            <div id="v22rtus1"></div>
+                        </div>
+                        <div class="column" id="outcome">
+                            <h2>Kulud</h2>
+                            <div id="v22rtus2"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
