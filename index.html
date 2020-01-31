@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style> { box-sizing: border-box; }
+    .row:after { content: ""; display: table; clear: both; }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>EELARVE PLAANUR</title>
+</head>
+
+<body>
+    <div class="container">
+            <div class="header">
+                <div class="header-text">
+                    <h2>EELARVE</h2>
+                    <h2>PLAANUR</h2>
+                </div>
+                <div class="vl"></div>
+                <h2 class="j22k">JÄÄK: </h2>
+                <p id="vahe" class="balance-container"></p>
+            </div>
+        <div class="hl"></div>
+            <div class=container3>
+                    <div class=container2>
+                        <main>
+                            <input type="number" id="myText" value="" class="kast">
+                        </main>
+                        <main>
+                            <a href="#" button class="button pluss" id onclick="pluss()"> LISA TULUDESSE </a>
+                            <a href="#" button class="button miinus" id onclick="miinus()"> LISA KULUDESSE </a>
+                        </main>
+                    </div>
+                    <main>
+                        <div class="container4" style="display: flex;">
+                            <div class="column1" >
+                                <div class="column2">
+                                    <ul id="tulud_values"></ul>
+                                    <ul id="kulud_values"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
