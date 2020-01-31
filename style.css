@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255) 255, 255);
+}
+
+
+.container {
+    height: 100%;
+    flex-direction: column;
+    max-width: 950px;
+    float: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #393939;
+    background: linear-gradient(240deg, rgba(0,84,150,1) 0%, rgba(0,0,0,1) 100%);
+    
+}
+
+.container2 {
+    background-color: lightgrey;
+    flex-direction: column;
+    max-width: 950px;
+    float: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.container3 {
+    background-color: gray;
+    flex-direction: column;
+    max-width: 1050px;
+    float: center;
+    padding-top: 10px;
+    height: flex;
+    
+}
+
+.heading-container {
+    display: flex;
+
+}
+
+
+.header {
+    height: 100px;
+    flex-direction: row;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.header-text {
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    font-size: 2vw;
+}
+
+.vl {
+    border-left: whitesmoke solid 1px;
+    height: 100%;
+    margin: 20px;
+    
+}
+
+.hl {
+    border-bottom: black solid 8px;
+    width: 100%;
+}
+
+.j22k {
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    font-size: 4vw;
+}
+
+.balance-container {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius:7px;
+    margin: 10px;
+    font-size: xx-large;
+    align-items: center;
+    
+}
+
+
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.kast {
+    height: calc(100% - 20px);
+    background-color: white;
+    width: 100%;
+    margin: 10px;
+    height: 50px; 
+    text-align: center;
+    border: 1px solid;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center  
+}
+
+a.button {
+	display: inline-block;
+	outline: none;
+    cursor: pointer;
+    width: 50%;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+	padding: 1em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+a.button:hover {
+	text-decoration: none;
+}
+
+a.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.pluss {
+    background-color: #2fbd2f;
+}
+
+.miinus {
+    background-color: #f03939;
+}
+
+.column1 {
+    float: center;
+    width: 100%;
+    background-color: silver;
+    height: flex;
+    border-radius:15px;
+}
+
+.column2 {
+    float: center;
+    background-color: whitesmoke;
+    height: flex;
+    margin: 10px;
+    min-height: 300px;
+}
+
+li {
+    width: 100%;
+    border-color: whitesmoke;
+    border: 1px;
+    list-style-type: none;
+}
+
+.container4 {
+    width: 950px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: flex;
+}
+
+.negative {
+    color: #f03939;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: right;
+  }
+  .positive {
+    color: #2fbd2f;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: right;
+  @media all and (max-width:30em)
+{
+    a.button{
+        display:block;
+        margin:0.4em auto;
+    }
+}
