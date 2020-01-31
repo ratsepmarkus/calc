@@ -1,20 +1,38 @@
-var vahe = 0
-        document.getElementById("vahe").innerHTML = vahe
-        function pluss() {
-          var btn = document.createElement("li");
-          btn.classList.add('positive')
-          btn.innerHTML = document.getElementById("myText").value
-          document.getElementById("tulud_values").appendChild(btn)
-          var tulu = +document.getElementById("myText").value
-          vahe = window.vahe + tulu
-          document.getElementById("vahe").innerHTML = vahe
-        }
-        function miinus() {
-          var btn = document.createElement("li");
-          btn.classList.add('negative')
-          btn.innerHTML = document.getElementById("myText").value
-          document.getElementById("kulud_values").appendChild(btn)
-          var tulu = document.getElementById("myText").value;
-          vahe = window.vahe - tulu
-          document.getElementById("vahe").innerHTML = vahe
-        }
+let vahe = 0;
+
+function pluss(){
+ 
+ let income = +document.getElementById("summa").value;
+ let kirjeldus = document.getElementById("kirjeldus").value;
+ let newDiv = document.createElement("div");
+ newDiv.innerHTML = kirjeldus +" "+ income +"€";
+ document.getElementById("income").appendChild(newDiv);
+ vahe = vahe + income;
+ document.getElementById("vahe").innerHTML = vahe + "€";
+}
+
+function miinus(){
+  
+let outcome = +document.getElementById("summa").value;
+let kirjeldus = document.getElementById("kirjeldus").value;
+let newDiv = document.createElement("div");
+newDiv.innerHTML = kirjeldus +" "+ outcome +"€";
+document.getElementById("outcome").appendChild(newDiv);
+vahe =  vahe - outcome;
+document.getElementById("vahe").innerHTML = vahe + "€";
+ 
+}
+
+  //PLUSS----------------------------------------------------------------------------------------------
+ //  document.getElementById("v22rtus1").innerHTML = document.getElementById("summa").value;          /
+  //  var newDiv = document.createElement("div");                                                     /
+  //  var newContent = document.getElementById("v22rtus1");                                           /
+  //  var node = document.createElement("div");                                                       /
+  //  document.getElementById("v22rtus1").appendChild(node);                                          /  
+  //                                                                                                  /
+  //  newDiv.appendChild(newContent);                                                                 /
+  //                                                                                                  /  
+  //  var currentDiv = document.getElementById("v22rtus1");                                           /
+ // document.body.insertBefore(newDiv, currentDiv);                                                   /  
+//-----------------------------------------------------------------------------------------------------
+//  document.getElementById("v22rtus2").innerHTML = document.getElementById("summa").value;
