@@ -11,55 +11,52 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 255, 255) 255, 255);
+    background: darkgrey
 }
 
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
 
 .container {
-    height: 100%;
-    flex-direction: column;
-    max-width: 950px;
+    height: flex;
+    max-width: 1050px;
     float: center;
     width: 100%;
-    flex-wrap: wrap;
-    background-color: #393939;
-    background: linear-gradient(240deg, rgba(0,84,150,1) 0%, rgba(0,0,0,1) 100%);
-    
+    margin: 10p;
 }
 
 .container2 {
-    background-color: lightgrey;
-    flex-direction: column;
-    max-width: 950px;
+    background-color: darkgrey;
+    max-width: 1050px;
+    height: flex;
     float: center;
-    margin: 10px;
-    border-radius: 15px;
 }
 
 .container3 {
     background-color: gray;
-    flex-direction: column;
     max-width: 1050px;
-    float: center;
-    padding-top: 10px;
     height: flex;
-    
 }
 
-.heading-container {
-    display: flex;
-
+.container4 {
+    background-color: silver;
+    max-width: 1050px;
+    height: flex;
+    margin: 10px;
+    border-radius: 15px;
 }
-
 
 .header {
-    height: 100px;
+    height: 120px;
     flex-direction: row;
     max-width: 1050px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    background: linear-gradient(240deg, rgba(0,84,150,1) 0%, rgba(0,0,0,1) 100%)
 }
 
 .header-text {
@@ -67,13 +64,12 @@ body {
     color: whitesmoke;
     flex-direction: column;
     font-size: 2vw;
+    margin: 20px;
 }
 
 .vl {
     border-left: whitesmoke solid 1px;
-    height: 100%;
-    margin: 20px;
-    
+    height: 80%;
 }
 
 .hl {
@@ -82,29 +78,21 @@ body {
 }
 
 .j22k {
-    display: flex;
+    margin: 20px;
+    font-size: 3vw;
     color: whitesmoke;
-    flex-direction: column;
-    font-size: 4vw;
 }
 
 .balance-container {
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 80px;
+    margin-right: 20px;
     background-color: whitesmoke;
-    border-radius:7px;
-    margin: 10px;
-    font-size: xx-large;
+    border-radius: 20px;
+    justify-content: center;
     align-items: center;
-    
-}
-
-
-
-main {
-    flex: 1;
-    display: flex;
+    font-size: 30px;
 }
 
 .kast {
@@ -113,25 +101,26 @@ main {
     width: 100%;
     margin: 10px;
     height: 50px; 
+    font-size: medium;
     text-align: center;
     border: 1px solid;
     display: flex;
-    font-size: x-large;
     align-items: center;
     justify-content: center  
 }
 
-a.button {
+.button {
 	display: inline-block;
 	outline: none;
     cursor: pointer;
     width: 50%;
-    height: 30px;
+    height: 50px;
     margin: 10px;
-    text-align: center;
+	text-align: center;
     text-decoration: none;
-    color:whitesmoke;
-	padding: 1em 2em .55em;
+    color: whitesmoke;
+    font-size: medium;
+	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
@@ -141,11 +130,11 @@ a.button {
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
-a.button:hover {
+.button:hover {
 	text-decoration: none;
 }
 
-a.button:active {
+.button:active {
 	position: relative;
 	top: 1px;
 }
@@ -158,51 +147,21 @@ a.button:active {
     background-color: #f03939;
 }
 
-.column1 {
-    float: center;
-    width: 100%;
-    background-color: silver;
-    height: flex;
-    border-radius:15px;
-}
-
-.column2 {
-    float: center;
-    background-color: whitesmoke;
+.column {
+    float: left;
+    width: 50%;
     height: flex;
     margin: 10px;
+    background-color: whitesmoke;
     min-height: 300px;
+    border-radius:15px;
+    text-align: center;
 }
 
-li {
-    width: 100%;
-    border-color: whitesmoke;
-    border: 1px;
-    list-style-type: none;
+.kirjeldus {
+    float: left;
 }
 
-.container4 {
-    width: 950px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: flex;
-}
-
-.negative {
-    color: #f03939;
-    font-size: x-large;
-    font-weight: 700;
-    text-align: right;
-  }
-  .positive {
-    color: #2fbd2f;
-    font-size: x-large;
-    font-weight: 700;
-    text-align: right;
-  @media all and (max-width:30em)
-{
-    a.button{
-        display:block;
-        margin:0.4em auto;
-    }
+.summa{
+    float: right;
 }
